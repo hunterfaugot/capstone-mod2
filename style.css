@@ -48,14 +48,11 @@ h1 {
 	max-width: 30%; /* Ensure the poster doesn't overflow the container */
 }
 
-#moviePoster {
-	max-width: 30%; /* Adjust as needed */
-	margin-right: 20px;
-}
 #movieTitle {
 	text-align: center;
 	margin-bottom: 10px;
 }
+
 #movieInfo {
 	flex: 1;   
 	padding: 20px;         
@@ -65,16 +62,23 @@ h1 {
 @media (max-width: 768px) {
 	#movieContainer {
 			flex-direction: column; /* Stack elements vertically on smaller screens */
+			margin: 10px auto;
 	}
 
 	#moviePoster {
 			max-width: 100%;  /* Take full width on smaller screens */
 			margin: 0 0 20px 0; /* Adjust margin as needed */
 	}
+
+	#movieInfo {
+		flex: 1;   
+		padding: 0px;         
+	}
+
+	#randomizer-btn {
+		margin: 20px auto 0px auto; /* Center the button horizontally */
+	}
 }
-
-
-
 
 
 #movieOverview {
