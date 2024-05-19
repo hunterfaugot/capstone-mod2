@@ -58,6 +58,8 @@ function displayMovie(movie) {
   } else {
       console.error("Error: Some HTML elements not found.");
   }
+  moviePoster.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+    moviePoster.style.display = 'block'; // Show the poster
 }
 // const randomizerButton = document.getElementById('randomizer-btn');
 // //const API_KEY = 'YOUR_API_KEY';

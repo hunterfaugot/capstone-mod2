@@ -1,4 +1,82 @@
-html {
-	height: 100%;
-	width: 100%;
+
+body {
+	background-color: black !important; 
+	padding: 20px;
+	color: white !important;          
+	font-family: sans-serif; /* Choose your preferred font */
+}
+
+/* Optional: Style for your h1 */
+h1 {
+	text-align: center;  
+	padding-top: 40px;
+	font-size: 2.5rem;
+}
+
+/* Optional: Style for your button */
+#randomizer-btn {
+	background-color: #dc2c2c; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 40px auto; /* Center the button horizontally */
+	display: block; /* Make it a block element so it takes full width */
+	cursor: pointer;
+}
+
+
+
+/* Optional: Style for your movie container */
+/* style.css */
+#movieContainer {
+	display: flex;           /* Enable flexbox layout */
+	align-items: center;      /* Vertically align items (poster and info) to center */
+	justify-content: center; /* Horizontally align items to center */
+	width: 80%;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+#moviePoster {
+	display: none; 
+	margin-right: 20px;
+	border: 10px solid white; 
+	max-width: 30%; /* Ensure the poster doesn't overflow the container */
+}
+
+#moviePoster {
+	max-width: 30%; /* Adjust as needed */
+	margin-right: 20px;
+}
+#movieTitle {
+	text-align: center;
+	margin-bottom: 10px;
+}
+#movieInfo {
+	flex: 1;   
+	padding: 20px;         
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+	#movieContainer {
+			flex-direction: column; /* Stack elements vertically on smaller screens */
+	}
+
+	#moviePoster {
+			max-width: 100%;  /* Take full width on smaller screens */
+			margin: 0 0 20px 0; /* Adjust margin as needed */
+	}
+}
+
+
+
+
+
+#movieOverview {
+	text-align: justify;
 }
