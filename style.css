@@ -1,7 +1,7 @@
 
 body {
 	background-color: black !important; 
-	padding: 20px;
+	padding: 0px;
 	color: white !important;          
 	font-family: sans-serif; /* Choose your preferred font */
 }
@@ -21,6 +21,7 @@ h1 {
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
+	font-weight: bold;
 	display: inline-block;
 	font-size: 16px;
 	margin: 40px auto; /* Center the button horizontally */
@@ -63,6 +64,7 @@ h1 {
 	#movieContainer {
 			flex-direction: column; /* Stack elements vertically on smaller screens */
 			margin: 10px auto;
+			padding: 10px 0px 0px 0px;
 	}
 
 	#moviePoster {
